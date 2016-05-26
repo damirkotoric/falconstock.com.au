@@ -10,5 +10,12 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
+gem "middleman-sprockets", "~> 4.0.0.rc"
 gem 'middleman-livereload'
-gem 'middleman-compass', '>= 4.0.0'
+
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+gem "middleman-favicon-maker", "4.0.1.beta.1"
+gem "middleman-compass"
+gem "sass"
+gem "breakpoint"
+gem "susy"

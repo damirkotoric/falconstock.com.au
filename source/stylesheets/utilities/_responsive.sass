@@ -1,0 +1,27 @@
+// Breakpoints
+$up-to-breakpoint-1: max-width 400px, 6
+$up-to-breakpoint-2: max-width 800px, 6
+$up-to-breakpoint-3: max-width 1200px, 12
+$breakpoint-1: 400px, 6
+$breakpoint-2: 800px, 6
+$breakpoint-3: 1000px, 12
+$breakpoint-4: 1600px, 12
+
+.is-hidden-breakpoint-1-and-above
+  +susy-breakpoint($breakpoint-1...)
+    display: none
+
+.is-visible-breakpoint-2-and-above
+  display: none
+  +susy-breakpoint($breakpoint-2...)
+    display: block
+
+.is-visible-breakpoint-3-and-above
+  display: none
+  +susy-breakpoint($breakpoint-3...)
+    display: block
+
+.is-visible-breakpoint-4-and-above
+  display: none
+  +susy-breakpoint($breakpoint-4...)
+    display: block
