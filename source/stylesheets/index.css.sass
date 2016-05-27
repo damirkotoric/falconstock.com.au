@@ -30,12 +30,13 @@ html
     font-size: 20px
 
 h1
+  font-size: 18px
   font-weight: 100
-  margin-bottom: 60px
-  > img
-    display: inline-block
-    margin-top: 1em
-    max-width: 100%
+  margin: 30px 0 40px
+  +susy-breakpoint($breakpoint-1...)
+    font-size: 30px
+  +susy-breakpoint($breakpoint-2...)
+    font-size: 40px
 
 input
   background: $white-almost
@@ -51,7 +52,7 @@ input
     border: 1px solid lighten($grey, 10%)
     outline: none
   +susy-breakpoint($breakpoint-2...)
-    min-width: 400px
+    min-width: 360px
   &[type="submit"]
     background: $blue
     border: 1px solid rgba($white, 0.4)

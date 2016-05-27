@@ -14,7 +14,7 @@ gem "middleman-sprockets", "~> 4.0.0.rc"
 gem 'middleman-livereload'
 
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
-gem "middleman-favicon-maker", "4.0.1.beta.1"
+gem "middleman-favicon-maker", "4.0.3"
 gem "middleman-compass"
 gem "sass"
 gem "breakpoint"
