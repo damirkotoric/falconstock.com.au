@@ -1,11 +1,27 @@
 .hero
   +clearfix
+  color: $white
+  display: flex
+  align-items: flex-end
+  min-height: 100vh
   position: relative
+
+  &::after
+    content: ""
+    background: $white
+    height: 10px
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
 
   > div
     +container
+    +pad(5%)
+    margin-bottom: 60px
+    text-transform: uppercase
 
-  img
+  > img
     left: 0
     object-fit: cover
     position: absolute

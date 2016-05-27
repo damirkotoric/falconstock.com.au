@@ -11,3 +11,56 @@
 
 @import "modules/nav"
 @import "modules/hero"
+@import "modules/mc_embed_signup"
+
+*
+  margin: 0
+  padding: 0
+html
+  box-sizing: border-box
+*
+  &, &:before, &:after
+    box-sizing: inherit
+
+html
+  font-family: Raleway
+  font-size: 14px
+  font-weight: 300
+  +susy-breakpoint($breakpoint-2...)
+    font-size: 20px
+
+h1
+  font-weight: 100
+  margin-bottom: 60px
+  > img
+    display: inline-block
+    margin-top: 1em
+    max-width: 100%
+
+input
+  background: $white-almost
+  border: 1px solid lighten($grey, 30%)
+  border-radius: 2px
+  min-height: 60px
+  padding: 10px 15px
+  transition: background 0.3s
+  width: 100%
+  +susy-breakpoint($breakpoint-2...)
+    width: auto
+  &:focus
+    border: 1px solid lighten($grey, 10%)
+    outline: none
+  +susy-breakpoint($breakpoint-2...)
+    min-width: 400px
+  &[type="submit"]
+    background: $blue
+    border: 1px solid rgba($white, 0.4)
+    color: $white
+    min-width: 270px
+    &:hover
+      background: lighten($blue, 5%)
+    &:focus
+      background: darken($blue, 5%)
+      transition: none
+      border: 1px solid rgba($white, 0.6)
+      outline: none
