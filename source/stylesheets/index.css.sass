@@ -39,7 +39,7 @@ h1
     font-size: 40px
     font-weight: 100
 
-input
+input, button
   background: $white-almost
   border: 1px solid lighten($grey, 30%)
   border-radius: 2px
@@ -54,15 +54,17 @@ input
     outline: none
   +susy-breakpoint($breakpoint-2...)
     min-width: 360px
-  &[type="submit"]
-    background: $blue
-    border: 1px solid rgba($white, 0.4)
-    color: $white
-    min-width: 270px
-    &:hover
-      background: lighten($blue, 5%)
-    &:focus
-      background: darken($blue, 5%)
-      transition: none
-      border: 1px solid rgba($white, 0.6)
-      outline: none
+
+input[type="submit"], button
+  background: $blue
+  border: 1px solid rgba($white, 0.4)
+  color: $white
+  min-width: 270px
+  padding: 10px 30px
+  &:hover
+    background: lighten($blue, 5%)
+  &:focus
+    background: darken($blue, 5%)
+    transition: none
+    border: 1px solid rgba($white, 0.6)
+    outline: none

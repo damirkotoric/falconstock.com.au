@@ -9,12 +9,11 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
-gem 'middleman', '>= 4.0.0'
-gem "middleman-sprockets", "~> 4.0.0.rc"
+gem 'middleman'
 gem 'middleman-livereload'
 
-gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
-gem "middleman-favicon-maker", "4.0.3"
+gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-deploy', branch: 'master'
+gem "middleman-favicon-maker"
 gem "middleman-compass"
 gem "sass"
 gem "breakpoint"
