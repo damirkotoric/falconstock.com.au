@@ -11,7 +11,7 @@
 
 @import "modules/nav"
 @import "modules/hero"
-@import "modules/mc_embed_signup"
+@import "modules/btn"
 
 *
   margin: 0
@@ -29,15 +29,19 @@ html
   +susy-breakpoint($breakpoint-2...)
     font-size: 20px
 
-h1
+h2
   font-size: 18px
   font-weight: 300
-  margin: 30px 0 40px
+  margin: 30px 0 10px
+  text-transform: uppercase
   +susy-breakpoint($breakpoint-1...)
     font-size: 30px
   +susy-breakpoint($breakpoint-2...)
     font-size: 40px
     font-weight: 100
+
+p
+  line-height: 1.4
 
 input, button
   background: $white-almost
@@ -54,17 +58,3 @@ input, button
     outline: none
   +susy-breakpoint($breakpoint-2...)
     min-width: 360px
-
-input[type="submit"], button
-  background: $blue
-  border: 1px solid rgba($white, 0.4)
-  color: $white
-  min-width: 270px
-  padding: 10px 30px
-  &:hover
-    background: lighten($blue, 5%)
-  &:focus
-    background: darken($blue, 5%)
-    transition: none
-    border: 1px solid rgba($white, 0.6)
-    outline: none
