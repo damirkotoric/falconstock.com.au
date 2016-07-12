@@ -11,6 +11,7 @@
 
 @import "modules/nav"
 @import "modules/hero"
+@import "modules/about"
 @import "modules/btn"
 
 *
@@ -23,7 +24,7 @@ html
     box-sizing: inherit
 
 html
-  font-family: Raleway
+  font-family: Raleway, sans-serif
   font-size: 16px
   font-weight: 300
   +susy-breakpoint($breakpoint-2...)
@@ -32,7 +33,7 @@ html
 h2
   font-size: 18px
   font-weight: 300
-  margin: 30px 0 10px
+  margin: 30px 0 30px
   text-transform: uppercase
   +susy-breakpoint($breakpoint-1...)
     font-size: 25px
@@ -44,15 +45,15 @@ p
   line-height: 1.4
 
 a
-  border-bottom: 1px solid rgba($white, .3)
-  color: $white
+  border-bottom: 1px solid rgba($grey, .3)
+  color: $black
   font-weight: 500
   text-decoration: none
   transition: all 0.3s
   &:hover
-    border-bottom: 1px solid rgba($white, .5)
+    border-bottom: 1px solid rgba($grey, .5)
   &:active
-    border-bottom: 1px solid rgba($white, .8)
+    border-bottom: 1px solid rgba($grey, .8)
     transition: none
   &:focus
     outline: none
