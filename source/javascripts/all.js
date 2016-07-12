@@ -23,7 +23,7 @@ $(function() {
     player.addEvent('playProgress', onPlayProgress)
   })
 
-  // // Stipe listeners
+  // // Stripe listeners
   // $('#purchase-button').on('click', function(e) {
   //   // Open Checkout with further options:
   //   handler.open({
@@ -41,6 +41,14 @@ $(function() {
   // $(window).on('popstate', function() {
   //   handler.close();
   // });
+
+  drift.on('ready', function(api) {
+    // interact with the api here
+    $("#drift-launcher").on("click", function (event) {
+      event.preventDefault()
+      api.sidebar.open()
+    })
+  })
 })
 
 var videoIsShown = false
