@@ -49,6 +49,13 @@ $(function() {
       api.sidebar.open()
     })
   })
+
+  $("#mce-EMAIL").focus()
+
+  // Automatically start downloading free video
+  if ($("#download").length) {
+    $("#download").get(0).click()
+  }
 })
 
 var videoIsShown = false
