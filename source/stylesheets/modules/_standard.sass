@@ -1,0 +1,29 @@
+.standard
+  +clearfix
+  background: $white
+  margin-top: -10px
+  position: relative
+  z-index: 10
+
+  > div
+    +pad(20px)
+    padding-top: 30px
+    padding-bottom: 60px
+    position: relative
+    width: 100%
+    z-index: 3
+    +susy-breakpoint($breakpoint-1...)
+      +pad(40px)
+    +susy-breakpoint($breakpoint-2...)
+      +pad(60px)
+      padding-top: 60px
+      padding-bottom: 90px
+    +susy-breakpoint($breakpoint-3...)
+      +span(9 of 12)
+      +pad(90px)
+
+    ul
+      margin-left: 30px
+
+    li
+      margin: 5px 0

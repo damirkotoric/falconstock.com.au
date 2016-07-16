@@ -10,6 +10,8 @@
 @import "utilities/animations"
 
 @import "modules/nav"
+@import "modules/standard"
+@import "modules/footer"
 @import "modules/hero"
 @import "modules/about"
 @import "modules/btn"
@@ -55,6 +57,9 @@ h2
 p
   color: $grey
   line-height: 1.4
+  margin: 10px 0
+  +susy-breakpoint($breakpoint-3...)
+    margin: 20px 0
 
 a
   border-bottom: 1px solid rgba($grey, .3)
