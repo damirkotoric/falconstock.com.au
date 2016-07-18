@@ -7,20 +7,10 @@
   height: 100%
   min-height: 100vh
   position: relative
+  z-index: 1
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
     // IE10+ specific styles go here
     height: 100vh
-
-  > img
-    object-fit: cover
-    object-position: 50% 50%
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-    z-index: 0
-    min-height: 100%
-    min-width: 100%
 
 .hero__content
   +pad(20px)
@@ -68,6 +58,14 @@
     text-align: left
 
 .hero__image
+  object-fit: cover
+  object-position: 50% 50%
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  min-height: 100%
+  min-width: 100%
   z-index: 0
 
 .hero__video
