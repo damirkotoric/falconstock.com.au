@@ -2,6 +2,7 @@ $(function() {
   // Init
   var iframe = $('#player1')[0]
   var player = $f(iframe)
+  $(".video").fitVids()
 
   // // Stripe init
   // var handler = StripeCheckout.configure({
