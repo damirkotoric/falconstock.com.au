@@ -1,7 +1,7 @@
 $(function() {
   // Init
   var iframe = $('#player1')[0]
-  var player = $f(iframe)
+  var player = new Vimeo.Player(iframe)
   $(".video").fitVids()
 
   // // Stripe init
@@ -20,9 +20,8 @@ $(function() {
   // });
 
   // Listeners
-  player.addEvent('ready', function() {
-    player.addEvent('playProgress', onPlayProgress)
-  })
+  player.on('playProgress', onPlayProgress)
+  player.on('finish', onFinish)
 
   // // Stripe listeners
   // $('#purchase-button').on('click', function(e) {
@@ -65,4 +64,8 @@ function onPlayProgress(data) {
     $(".hero__video").delay(5000).addClass("-visible")
     videoIsShown = true
   }
+}
+
+function onFinish(data) {
+  console.log('THE VIDEO HAS FINISHED PLAYING')
 }
